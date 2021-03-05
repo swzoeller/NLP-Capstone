@@ -31,9 +31,9 @@ Deep Learning Models:
   - GRU  
   - LSTM
  
-Final model was SVD model from Surprise library that has been tuned with GridSearch
-  - Final RMSE: 0.87
-  - Model is off by 0.87 points on average
+Final model was LSTM Neural Network tuned with Talos
+  - Final Accuracy: 80%
+  - Final F1 score: 0.75
 
 ![Predicted Average Rating per User vs Actual Average Rating per User](https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/act_pred.png)
 
