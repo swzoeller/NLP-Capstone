@@ -35,10 +35,10 @@ Final model was LSTM Neural Network tuned with Talos
   - Final Accuracy: 80%
   - Final F1 score: 0.75
 
-![Predicted Average Rating per User vs Actual Average Rating per User](https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/act_pred.png)
+![Final Model Stats](https://github.com/swzoeller/NLP-Capstone/blob/main/Images/finalmodel.png)
 
 ### Prediction Function
-![Recommendation Function Sample](https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/recommend_fx.png)
+![Function Sample](https://github.com/swzoeller/NLP-Capstone/blob/main/Images/prediction.png)
 
 ### Conclusions and Next Steps
 - While there appears to be a mathematical difference in the way right and left politicians tweet, there is still a gray area and room for improvement
