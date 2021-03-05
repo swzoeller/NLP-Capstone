@@ -16,10 +16,9 @@ So...can we detect political bias in tweets?
 
 ### Exploratory Data Analysis (EDA)
 <img src="https://github.com/swzoeller/NLP-Capstone/blob/main/Images/wcl.png" width="400" height="200"/>
-<Left wing tweets focused on certain topics, including healthcare and gun violence, President Trump/>
 
 <img src="https://github.com/swzoeller/NLP-Capstone/blob/main/Images/wcr.png" width="400" height="200"/>
-Right wing tweets focused on temporal concepts, like today and time, as well as the opposing party (democrat)
+Left wing tweets focused on certain topics, including healthcare and gun violence, and President Trump while Right wing tweets focused on temporal concepts, like today and time, as well as the opposing party (democrat).
 
 ### Modeling Process
 Machine Learning Models:
