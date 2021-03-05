@@ -132,3 +132,5 @@ dmypy.json
 tweets_all.csv
 expanded_df.csv
 preprocess.csv
+glove.6B.300d.txt
+030421181420.csv
