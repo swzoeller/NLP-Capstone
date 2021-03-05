@@ -41,10 +41,10 @@ Final model was LSTM Neural Network tuned with Talos
 ![Function Sample](https://github.com/swzoeller/NLP-Capstone/blob/main/Images/prediction.png)
 
 ### Conclusions
-- While there appears to be a detectable difference in the way right or left leaning politicians tweet, the model does not perfectly distinguish between the two and could use further tuning.
-- Model could be more accurate with added classes, such as “neutral”, “mild right bias”, “mild left bias”.
-- If the model were to be used, it could label articles/posts as “May Contain Political Bias” for the content that is  determined to be far right or left (based on their probabilities).
-- This would allow readers to at least be aware that there may be bias.
+- While there appears to be a detectable difference in the way right or left leaning politicians tweet, the model does not perfectly distinguish between the two and could use further tuning
+- Model could be more accurate with added classes, such as “neutral”, “mild right bias”, “mild left bias”
+- If the model were to be used, it could label articles/posts as “May Contain Political Bias” for the content that is  determined to be far right or left (based on their probabilities)
+- This would allow readers to at least be aware that there may be bias
 
 ### Next Steps
 - Expand classes
@@ -56,7 +56,7 @@ Final model was LSTM Neural Network tuned with Talos
 ### Limitations
 - Labeling: Data labeling was based on political party of the tweeter. Party of tweeter does not necessarily serve as a proxy for political bias
 - Class distributions: Some politicians who tweet more frequently were more represented in the data than others. This could introduce bias into the dataset if said politicians use a certain rhetoric
-- Inclusion/exclusion of political figures: Dataset was restricted to those figures on twitter. Politicians who are not on the platform were not included. 
+- Inclusion/exclusion of political figures: Dataset was restricted to those figures on twitter. Politicians who are not on the platform were not included
 
 ### Additional Sources
 - TriageCancer.org [congressional social media handles](https://triagecancer.org/congressional-social-media)
