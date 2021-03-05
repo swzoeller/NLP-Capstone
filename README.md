@@ -38,7 +38,7 @@ Final model was LSTM Neural Network tuned with Talos
 ![Final Model Stats](https://github.com/swzoeller/NLP-Capstone/blob/main/Images/finalmodel.png)
 
 ### Prediction Function
-![Function Sample](https://github.com/swzoeller/NLP-Capstone/blob/main/Images/prediction.png)
+<img src="https://github.com/swzoeller/NLP-Capstone/blob/main/Images/prediction2.png" width="800" height="200"/>
 
 ### Conclusions
 - While there appears to be a detectable difference in the way right or left leaning politicians tweet, the model does not perfectly distinguish between the two and could use further tuning
