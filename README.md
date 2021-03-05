@@ -3,7 +3,7 @@ NLP and Neural Network Project - Flatiron Phase 5
 Prepared and Presented by:  **_Sarah Zoeller_**
 
 ### Business Case   
-Given the recent political context, various organizations are exploring the use of machine learning to fight political bias in text content such as news articles and social media posts. This project aims to explore if a machine learning algorithm or deep learning can distinguish between content from left leaning politicians vs right leaning politicians.
+Given the recent political context, various organizations are exploring the use of machine learning to fight political bias in text content such as news articles and social media posts. This project aims to explore if a machine learning or deep learning algorithm can distinguish between content from left leaning politicians vs right leaning politicians.
 
 So...can we detect political bias in tweets?
 
