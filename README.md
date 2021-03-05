@@ -40,17 +40,21 @@ Final model was LSTM Neural Network tuned with Talos
 ### Prediction Function
 ![Function Sample](https://github.com/swzoeller/NLP-Capstone/blob/main/Images/prediction.png)
 
-### Conclusions and Next Steps
-- While there appears to be a mathematical difference in the way right and left politicians tweet, there is still a gray area and room for improvement
-- Consider including more classes (extreme right, mild right, neutral, mild left, extreme left)
-- Flag or label articles/posts that are determined to be far right or left so readers are aware that there may be bias
+### Conclusions
+- While there appears to be a detectable difference in the way right or left leaning politicians tweet, the model does not perfectly distinguish between the two and could use further tuning.
+- Model could be more accurate with added classes, such as “neutral”, “mild right bias”, “mild left bias”.
+- If the model were to be used, it could label articles/posts as “May Contain Political Bias” for the content that is  determined to be far right or left (based on their probabilities).
+- This would allow readers to at least be aware that there may be bias.
+
+### Next Steps
+- Expand classes
 - Explore removal/inclusion of tweets based on their content
 - Explore inclusion of prominent figures into dataset who are not on Twitter
 - Set minimum and maximum threshold for tweets to be included in dataset so there is not over/under representation of certain tweeters
 - Aggregate word embeddings into document embeddings
 
 ### Limitations
-- Labeling: Data labeling was based on political party of the tweeter. Party of tweeter does  not necessarily serve as a proxy for political bias
+- Labeling: Data labeling was based on political party of the tweeter. Party of tweeter does not necessarily serve as a proxy for political bias
 - Class distributions: Some politicians who tweet more frequently were more represented in the data than others. This could introduce bias into the dataset if said politicians use a certain rhetoric
 - Inclusion/exclusion of political figures: Dataset was restricted to those figures on twitter. Politicians who are not on the platform were not included. 
 
