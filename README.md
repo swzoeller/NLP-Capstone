@@ -8,7 +8,6 @@ Given the recent political context, various organizations are exploring the use 
 So...can we detect political bias in tweets?
 
 ### The Data
-
 - Data was sourced from Twitter using [Twint](https://github.com/twintproject/twint/)
 - Included over 400,000 tweets from 500+ congressional members and politicians from January 2016 - January 2020
 - Data was labeled as left or right biased based on the political party of the tweeter - **See Limitations**
@@ -16,34 +15,45 @@ So...can we detect political bias in tweets?
 - Train test split 70/30 train/test
 
 ### Exploratory Data Analysis (EDA)
-<img src="https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/num_v_rating.png" width="400" height="400"/>
-- Frequently rated movies were rated higher on average
+<img src="https://github.com/swzoeller/NLP-Capstone/blob/main/Images/wcl.png" width="400" height="200"/>
+- Left wing tweets focused on certain topics, including healthcare and gun violence, President Trump 
 
-<img src="https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/top_mov.png" width="400" height="400"/>
-- Over 6000 movies had less than 5 ratings, while others had upwards of 300, potentially resulting in popularity bias
-
+<img src="https://github.com/swzoeller/NLP-Capstone/blob/main/Images/wcr.png" width="400" height="200"/>
+- Right wing tweets focused on temporal concepts, like today and time, as well as the opposing party (democrat)
 
 ### Modeling Process
-- KNN Basic from the Surprise library was used as a baseline
-  - Baseline RMSE: 0.97 
-- Final model was SVD model from Surprise library that has been tuned with GridSearch
+Machine Learning Models:
+- Logistic Regression
+- Random Forest
+- Naive Bayes
+
+Deep Learning Models:
+- RNN
+  - GRU  
+  - LSTM
+ 
+Final model was SVD model from Surprise library that has been tuned with GridSearch
   - Final RMSE: 0.87
   - Model is off by 0.87 points on average
 
 ![Predicted Average Rating per User vs Actual Average Rating per User](https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/act_pred.png)
 
-### Recommendation Function
+### Prediction Function
 ![Recommendation Function Sample](https://github.com/swzoeller/Movie-Recommendation-System/blob/main/Images/recommend_fx.png)
 
-### Conclusions
-- The final model is not a perfect fit based on the RMSE (0.87), but is less than the standard deviation of the original ratings dataset (1.05)
-- Recommendations appear to be more accurate when genre is specified
+### Conclusions and Next Steps
+- While there appears to be a mathematical difference in the way right and left politicians tweet, there is still a gray area and room for improvement
+- Consider including more classes (extreme right, mild right, neutral, mild left, extreme left)
+- Flag or label articles/posts that are determined to be far right or left so readers are aware that there may be bias
+- Explore removal/inclusion of tweets based on their content
+- Explore inclusion of prominent figures into dataset who are not on Twitter
+- Set minimum and maximum threshold for tweets to be included in dataset so there is not over/under representation of certain tweeters
+- Aggregate word embeddings into document embeddings
 
-### Future Steps and Limitations
-- Obtain reviews for movies that do not have a sufficient amount of reviews to be deemed reliable to the dataset or consider removing from model
-- Investigate approaches to deal with popularity bias so to increase the representation of less popular movies (considering including weights in model)
-- Create a more robust model with LightFM by incorporating movie features into weighting
-- Calculate similarity metric between recommended movies and highest rated movies to better validate recommendations
+### Limitations
+- Labeling: Data labeling was based on political party of the tweeter. Party of tweeter does  not necessarily serve as a proxy for political bias
+- Class distributions: Some politicians who tweet more frequently were more represented in the data than others. This could introduce bias into the dataset if said politicians use a certain rhetoric
+- Inclusion/exclusion of political figures: Dataset was restricted to those figures on twitter. Politicians who are not on the platform were not included. 
 
 ### Additional Sources
 - TriageCancer.org [congressional social media handles](https://triagecancer.org/congressional-social-media)
