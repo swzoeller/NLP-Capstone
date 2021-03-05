@@ -9,7 +9,7 @@ So...can we detect political bias in tweets?
 
 ### The Data
 - Data was sourced from Twitter using [Twint](https://github.com/twintproject/twint/)
-- Included over 400,000 tweets from 500+ congressional members and politicians from January 2016 - January 2020
+- Included over 400,000 tweets from 500+ congressional members and politicians from January 2016 - February 2021
 - Data was labeled as left or right biased based on the political party of the tweeter - **See Limitations**
 - 75% of data was class “D” (Democrat), 25% class “R” (Republican)
 - Train test split 70/30 train/test
